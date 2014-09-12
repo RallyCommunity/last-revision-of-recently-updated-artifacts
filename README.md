@@ -2,10 +2,10 @@ Last revision of recently updated artifacts
 =========================
 
 ## Overview
-![](pic0.png)
+![](pic.png)
 Getting and parsing revision history is expensive. To make this more efficient and performant the artifacts are queried by LastUpdateDate which is hardcoded to go back two days from the current date:
 ```
-var startDate = new Date(new Date() - 86400000*2).toISOString(); //in the last 2 days; millisecondsInDay = 86400000
+var startDate = new Date(new Date() - 86400000*2).toISOString(); //millisecondsInDay = 86400000
         
         var filters = [
             {
